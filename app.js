@@ -48,9 +48,7 @@ five.addEventListener('click', () => {
     }
 })
 
-userAmount.addEventListener('input', checkUserAmount)
-
-userAmount.addEventListener('change', checkUserAmount)
+userAmount.addEventListener('input', checkUserAmount);
 
 function checkUserAmount() {
     if (userAmount.value === "0" || userAmount.value == "") {

@@ -315,12 +315,16 @@ body {
 }
 
 @media screen and (max-width:500px) {
+    body{
+        height: 100vh;
+    }
+
     .wrapper {
         height: 100vh;
         width: 100%;
     }
     .title-main {
-        margin: 20px;
+        font-size: 3rem;
     }
     .container {
         width: 90%;
