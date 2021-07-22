@@ -20,36 +20,40 @@
     </div>
     <div class="space-height"></div>
     <div class="container">
-      <div class="user">
-        <div class="billamount">
-          <div class="billamount-label">
-            <p class="billamount Title">Bill</p>
-            <p class="warning-bill">Number of people : <span class="warning-bill-span">Required.</span></p>
-            <p class="warning-bill-two">Bill Amount : <span class="warning-bill-span-two">Required.</span></p>
+      <div class="input-wrapper">
+        <div class="user">
+          <div class="billamount">
+            <div class="billamount-label">
+              <p class="billamount Title">Bill</p>
+              <p class="warning-bill">Number of people : <span class="warning-bill-span">Required.</span></p>
+              <p class="warning-bill-two">Bill Amount : <span class="warning-bill-span-two">Required.</span></p>
+            </div>
+            <div class="bill-input">
+              <i class="fas fa-dollar-sign"></i>
+              <input type="text" name="bill" id="billamount" placeholder="0">
+            </div>
           </div>
-          <div class="bill-input">
-            <i class="fas fa-dollar-sign"></i>
-            <input type="text" name="bill" id="billamount" placeholder="0">
+          <div class="useramount">
+            <div class="useramount-label">
+              <p class="useramount Title">Number of People</p>
+              <p class="warning">Can't be zero</p>
+            </div>
+            <div class="user-input">
+              <i class="fas fa-users"></i>
+              <input type="text" name="user" id="useramount" placeholder="0" class="">
+            </div>
           </div>
-        </div>
-        <div class="tip">
-          <div class="tip-label">
-          <div class="tip Title">Select Tip %</div><p class="tip-warning">Please select a tip to get the shares!</p></div>
-          <div class="tip-button">
-            <button class="tip-amount one">5%</button><button class="tip-amount two">10%</button><button
-              class="tip-amount three">15%</button><button class="tip-amount four">25%</button><button
-              class="tip-amount five">50%</button>
-            <input type="text" name="custome-tip" class="custom" placeholder="Custom">
-          </div>
-        </div>
-        <div class="useramount">
-          <div class="useramount-label">
-            <p class="useramount Title">Number of People</p>
-            <p class="warning">Can't be zero</p>
-          </div>
-          <div class="user-input">
-            <i class="fas fa-users"></i>
-            <input type="text" name="user" id="useramount" placeholder="0" class="">
+          <div class="tip">
+            <div class="tip-label">
+              <div class="tip Title">Select Tip %</div>
+              <p class="tip-warning">Please select a tip to get the shares!</p>
+            </div>
+            <div class="tip-button">
+              <button class="tip-amount one">5%</button><button class="tip-amount two">10%</button><button
+                class="tip-amount three">15%</button><button class="tip-amount four">25%</button><button
+                class="tip-amount five">50%</button>
+              <input type="text" name="custome-tip" class="custom" placeholder="Custom">
+            </div>
           </div>
         </div>
       </div>
