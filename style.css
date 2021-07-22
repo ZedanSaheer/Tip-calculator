@@ -75,6 +75,10 @@ body {
     height: 120px;
 }
 
+.billamount.Title{
+    margin:10px;
+}
+
 .bill-input, .user-input {
     display: flex;
     align-items: center;
@@ -120,6 +124,7 @@ body {
     color: red;
     opacity: 0;
 }
+
 
 .billamount-label {
     display: flex;
