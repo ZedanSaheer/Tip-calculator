@@ -14,38 +14,37 @@ const warning = document.querySelector(".warning");
 const warningBill = document.querySelector(".warning-bill");
 const warningBillTwo = document.querySelector(".warning-bill-two");
 const tipWarning = document.querySelector(".tip-warning");
-const infoOutput = document.querySelector(".info-output");
 
-billAmount.addEventListener('click',()=>{
-    warningBill.style.display="block";
-    warningBillTwo.style.display="none";
+
+billAmount.addEventListener('click', () => {
+    warningBill.style.display = "block";
+    warningBillTwo.style.display = "none";
 })
-billAmount.addEventListener('change',()=>{
-    warningBill.style.display="none";
+billAmount.addEventListener('change', () => {
+    warningBill.style.display = "none";
     warning.style.opacity = "1";
     userInput.classList.toggle("warning-input");
-    userInput.disabled=false;
+    userInput.disabled = false;
 })
 
-reset.addEventListener('click',()=>{
-    userAmount.value="";
-    billAmount.value="";
-    tipOutput.innerHTML="$"+"0.00";
-    totalOutput.innerHTML="$"+"0.00";
-    tipWarning.style.opacity="0";
-    warning.style.opacity="0";
+reset.addEventListener('click', () => {
+    userAmount.value = "";
+    billAmount.value = "";
+    tipOutput.innerHTML = "$" + "0.00";
+    totalOutput.innerHTML = "$" + "0.00";
+    tipWarning.style.opacity = "0";
+    warning.style.opacity = "0";
     warningBill.style.display = "none";
     warningBillTwo.style.display = "none";
-    infoOutput.style.opacity="0";
 })
 
-five.addEventListener('click',()=>{
-    if(billAmount.value==""|| billAmount.value===0){
-        warning.style.opacity="1"
-        warningBillTwo.style.display="block";
+five.addEventListener('click', () => {
+    if (billAmount.value == "" || billAmount.value === 0) {
+        warning.style.opacity = "1"
+        warningBillTwo.style.display = "block";
     } else {
-        warning.style.opacity="0"
-        warningBillTwo.style.display="none";
+        warning.style.opacity = "0"
+        warningBillTwo.style.display = "none";
     }
 })
 
@@ -59,12 +58,12 @@ function checkUserAmount() {
         userInput.classList.toggle("warning-input");
     } else {
         warning.style.opacity = "0";
-        warningBill.style.display="none";
+        warningBill.style.display = "none";
         userInput.classList.remove("warning-input");
-        tipWarning.style.opacity="1";
+        tipWarning.style.opacity = "1";
         five.addEventListener('click', () => {
             if (userAmount.value === "0" || userAmount.value == "") {
-                warningBill.style.display="block";
+                warningBill.style.display = "block";
                 warning.style.opacity = "1";
                 userInput.classList.toggle("warning-input");
             } else {
@@ -72,14 +71,14 @@ function checkUserAmount() {
                 const tipPerson = parseFloat((tip / userAmount.value));
                 tipOutput.innerHTML = "$" + tipPerson;
                 const billPerson = parseFloat((billAmount.value / userAmount.value));
-                totalOutput.innerHTML = "$" + (tipPerson+billPerson);
-                infoOutput.style.opacity="1";
+                totalOutput.innerHTML = "$" + (tipPerson + billPerson);
+
             }
         });
 
         ten.addEventListener('click', () => {
             if (userAmount.value === 0 || userAmount.value == "") {
-                warningBill.style.display="block";
+                warningBill.style.display = "block";
                 warning.style.opacity = "1";
                 userInput.classList.toggle("warning-input");
             } else {
@@ -87,13 +86,13 @@ function checkUserAmount() {
                 const tipPerson = parseFloat((tip / userAmount.value));
                 tipOutput.innerHTML = "$" + tipPerson;
                 const billPerson = parseFloat((billAmount.value / userAmount.value));
-                totalOutput.innerHTML = "$" + (tipPerson+billPerson);
-                infoOutput.style.opacity="1";
+                totalOutput.innerHTML = "$" + (tipPerson + billPerson);
+
             }
         });
         fifteen.addEventListener('click', () => {
             if (userAmount.value === "0" || userAmount.value == "") {
-                warningBill.style.display="block";
+                warningBill.style.display = "block";
                 warning.style.opacity = "1";
                 userInput.classList.toggle("warning-input");
             } else {
@@ -101,13 +100,12 @@ function checkUserAmount() {
                 const tipPerson = parseFloat((tip / userAmount.value));
                 tipOutput.innerHTML = "$" + tipPerson;
                 const billPerson = parseFloat((billAmount.value / userAmount.value));
-                totalOutput.innerHTML = "$" + (tipPerson+billPerson);
-                infoOutput.style.opacity="1";
+                totalOutput.innerHTML = "$" + (tipPerson + billPerson);
             }
         });
         twentyFive.addEventListener('click', () => {
             if (userAmount.value === "0" || userAmount.value == "") {
-                warningBill.style.display="block";
+                warningBill.style.display = "block";
                 warning.style.opacity = "1";
                 userInput.classList.toggle("warning-input");
             } else {
@@ -115,13 +113,13 @@ function checkUserAmount() {
                 const tipPerson = parseFloat((tip / userAmount.value));
                 tipOutput.innerHTML = "$" + tipPerson;
                 const billPerson = parseFloat((billAmount.value / userAmount.value));
-                totalOutput.innerHTML = "$" + (tipPerson+billPerson);
-                infoOutput.style.opacity="1";
+                totalOutput.innerHTML = "$" + (tipPerson + billPerson);
+
             }
         });
         fifty.addEventListener('click', () => {
             if (userAmount.value === "0" || userAmount.value == "") {
-                warningBill.style.display="block";
+                warningBill.style.display = "block";
                 warning.style.opacity = "1";
                 userInput.classList.toggle("warning-input");
             } else {
@@ -129,13 +127,13 @@ function checkUserAmount() {
                 const tipPerson = parseFloat((tip / userAmount.value));
                 tipOutput.innerHTML = "$" + tipPerson;
                 const billPerson = parseFloat((billAmount.value / userAmount.value));
-                totalOutput.innerHTML = "$" + (tipPerson+billPerson);
-                infoOutput.style.opacity="1";
+                totalOutput.innerHTML = "$" + (tipPerson + billPerson);
+
             }
         });
         custom.addEventListener('change', () => {
             if (userAmount.value === "0" || userAmount.value == "") {
-                warningBill.style.display="block";
+                warningBill.style.display = "block";
                 warning.style.opacity = "1";
                 userInput.classList.toggle("warning-input");
             } else {
@@ -143,8 +141,8 @@ function checkUserAmount() {
                 const tipPerson = parseFloat((tip / userAmount.value));
                 tipOutput.innerHTML = "$" + tipPerson;
                 const billPerson = parseFloat((billAmount.value / userAmount.value));
-                totalOutput.innerHTML = "$" + (tipPerson+billPerson);
-                infoOutput.style.opacity="1";
+                totalOutput.innerHTML = "$" + (tipPerson + billPerson);
+
             }
         });
     }

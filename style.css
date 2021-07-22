@@ -1,32 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Space+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-
-
-:root{
---Verydarkcyan:hsl(183,100%,15%);
---veryDarkgrayishcyan:hsl(186,14%,43%);
---Darkgrayishcyan:hsl(184,14%,56%);
---Lightcyan:hsl(185,41%,84%);
---Lightgrayishwhite:hsl(189,41%,97%);
---White:hsl(0,0%,100%);
---Strong-cyan:hsl(172,67%,45%);
+:root {
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --veryDarkgrayishcyan: hsl(186, 14%, 43%);
+    --Darkgrayishcyan: hsl(184, 14%, 56%);
+    --Lightcyan: hsl(185, 41%, 84%);
+    --Lightgrayishwhite: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --Strong-cyan: hsl(172, 67%, 45%);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-*,*::after,*::before{
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
-body{
+body {
     max-height: 100vh;
-    font-family: "Space mono",sans-serif;
+    font-family: "Space mono", sans-serif;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
     min-height: 100vh;
     background: var(--Lightcyan);
@@ -36,20 +34,20 @@ body{
     align-items: center;
 }
 
-.space-height{
+.space-height {
     height: 40px;
 }
 
-.title-main{
-    font-family: "Space mono",sans-serif;
+.title-main {
+    font-family: "Space mono", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 10px;
     color: var(--Verydarkcyan);
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-.container{
+.container {
     height: 400px;
     width: 800px;
     background: var(--White);
@@ -57,40 +55,40 @@ body{
     display: flex;
 }
 
-.user{
+.user {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: left;
     flex: 1;
-    font-family: "Space mono",sans-serif;
+    font-family: "Space mono", sans-serif;
     overflow: hidden;
     padding: 40px;
 }
 
-.user-input{
+.user-input {
     border-radius: 8px;
 }
 
-.space-height-output{
+.space-height-output {
     height: 120px;
 }
 
-.bill-input,.user-input{
+.bill-input, .user-input {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.fas{
+.fas {
     position: absolute;
     left: 1vw;
     font-size: .8rem;
-    color:var(--veryDarkgrayishcyan)
+    color: var(--veryDarkgrayishcyan)
 }
 
-#billamount{
+#billamount {
     width: 360px;
     padding: 8px;
     border-radius: 8px;
@@ -100,7 +98,7 @@ body{
     text-align: right;
 }
 
-#useramount{
+#useramount {
     width: 360px;
     padding: 8px;
     border-radius: 8px;
@@ -110,25 +108,25 @@ body{
     text-align: right;
 }
 
-.useramount-label{
+.useramount-label {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.warning{
+.warning {
     font-size: 10px;
     font-weight: 700;
     color: red;
     opacity: 0;
 }
 
-.billamount-label{
+.billamount-label {
     display: flex;
     justify-content: space-between;
 }
 
-.warning-bill{
+.warning-bill {
     color: var(--Verydarkcyan);
     background: var(--Lightcyan);
     border-radius: 10px;
@@ -139,7 +137,7 @@ body{
     display: none;
 }
 
-.warning-bill-two{
+.warning-bill-two {
     color: red;
     border-radius: 10px;
     font-size: 10px;
@@ -148,32 +146,32 @@ body{
     display: none;
 }
 
-.warning-bill-span-two{
+.warning-bill-span-two {
     text-transform: uppercase;
     color: red;
 }
 
-.warning-bill-span{
+.warning-bill-span {
     text-transform: uppercase;
     color: red;
 }
 
-.warning-input{
+.warning-input {
     border: 1px solid red;
 }
 
-.tip{
+.tip {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
 
-.tip-label{
+.tip-label {
     display: flex;
     justify-content: space-between;
 }
 
-.tip-warning{
+.tip-warning {
     color: var(--Verydarkcyan);
     background: var(--Lightcyan);
     border-radius: 10px;
@@ -184,22 +182,22 @@ body{
     opacity: 0;
 }
 
-.tip-button{
+.tip-button {
     display: flex;
     flex-wrap: wrap;
     width: 380px;
 }
 
-.custom{
+.custom {
     font-weight: 700;
     font-size: 1rem;
-    font-family: "Space mono",sans-serif;
+    font-family: "Space mono", sans-serif;
     background: var(--Lightgrayishwhite);
     height: 50px;
     width: 100px;
     margin: 10px;
     text-align: center;
-    font-family: "Space mono",sans-serif;
+    font-family: "Space mono", sans-serif;
     font-weight: 700;
     font-size: 1rem;
     border-radius: 5px;
@@ -207,25 +205,25 @@ body{
     border: none;
 }
 
-.custom::-webkit-input-placeholder { 
+.custom::-webkit-input-placeholder {
     color: var(--Verydarkcyan);
-  }
+}
 
-.Title{
+.Title {
     color: var(--Verydarkcyan);
     font-weight: 700;
 }
 
-.tip.Title{
+.tip.Title {
     margin-left: 10px;
 }
 
-.tip-amount{
+.tip-amount {
     height: 50px;
     width: 100px;
     margin: 10px;
     text-align: center;
-    font-family: "Space mono",sans-serif;
+    font-family: "Space mono", sans-serif;
     font-weight: 700;
     font-size: 1rem;
     border-radius: 5px;
@@ -235,20 +233,20 @@ body{
     color: var(--White);
 }
 
-.tip-amount:hover{
+.tip-amount:hover {
     background: var(--Strong-cyan);
 }
 
-.output-wrapper{
-    padding: 50px; 
+.output-wrapper {
+    padding: 50px;
     flex: 1;
-    font-family: "Space mono",sans-serif;
+    font-family: "Space mono", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.output{
+.output {
     display: block;
     height: 100%;
     border-radius: 10px;
@@ -256,11 +254,11 @@ body{
     padding: 20px;
 }
 
-#reset{
+#reset {
     height: 50px;
     width: 100%;
     border-radius: 5px;
-    font-family: "Roboto mono",sans-serif;
+    font-family: "Roboto mono", sans-serif;
     background: var(--Darkgrayishcyan);
     font-size: 1rem;
     text-transform: uppercase;
@@ -269,17 +267,17 @@ body{
     color: var(--Verydarkcyan);
 }
 
-#reset:hover{
-    background:var(--Strong-cyan);
+#reset:hover {
+    background: var(--Strong-cyan);
 }
 
-.main-output{
+.main-output {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.info-output{
+.info-output {
     position: absolute;
     top: 100px;
     font-size: 8px;
@@ -289,21 +287,21 @@ body{
     opacity: 0;
 }
 
-
-.tip-amount-output{
+.tip-amount-output {
     display: flex;
     justify-content: space-between;
     color: var(--White);
     text-transform: capitalize;
 }
-.total-amount-output{
+
+.total-amount-output {
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
     color: var(--White);
 }
 
-.total-output , .tip-output{
+.total-output, .tip-output {
     color: var(--Strong-cyan);
     font-size: 2rem;
     font-weight: 700;
@@ -311,8 +309,112 @@ body{
     overflow: hidden;
 }
 
-.tip-text-sub , .total-text-sub{
+.tip-text-sub, .total-text-sub {
     font-size: .8rem;
     color: var(--veryDarkgrayishcyan);
 }
 
+@media screen and (max-width:500px) {
+    .wrapper {
+        height: 100vh;
+        width: 100%;
+    }
+    .title-main {
+        margin: 20px;
+    }
+    .container {
+        width: 90%;
+        flex-direction: column;
+        min-height: 600px;
+        padding: 0px 10px;
+    }
+    
+    .user{
+        flex: 2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .billamount-label{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .useramount-label{
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .billamount{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .warning-bill{
+        width: 400px;
+    }
+
+    .warning{
+        width: 200px;
+    }
+
+    .bill-input{
+        width: 100%;
+    }
+
+    #billamount{
+        width: 100%;
+        height: 50px;
+    }
+
+    .useramount{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-input{
+        width: 100%;
+    }
+
+    #useramount{
+        width: 100%;
+        height: 50px;
+    }
+
+    .tip{
+        width: 100%;
+    }
+
+    .tip-button{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tip-amount{
+        width: 75px;
+    }
+
+    .custom{
+        width: 75px;
+    }
+
+    .output-wrapper {
+        padding: 0;
+        justify-content: center;
+        flex: 1;
+    }
+    .output {
+        height: 70%;
+    }
+    .space-height-output{
+        height: 0px;
+    }
+    #reset{
+        border-radius: 40px;
+    }
+
+}
