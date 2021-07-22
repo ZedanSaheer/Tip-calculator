@@ -69,6 +69,10 @@ body{
     padding: 40px;
 }
 
+.user-input{
+    border-radius: 8px;
+}
+
 .space-height-output{
     height: 120px;
 }
@@ -106,13 +110,78 @@ body{
     text-align: right;
 }
 
-#useramount:focus{
+.useramount-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.warning{
+    font-size: 10px;
+    font-weight: 700;
+    color: red;
+    opacity: 0;
+}
+
+.billamount-label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.warning-bill{
+    color: var(--Verydarkcyan);
+    background: var(--Lightcyan);
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.warning-bill-two{
+    color: red;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px;
+    display: none;
+}
+
+.warning-bill-span-two{
+    text-transform: uppercase;
+    color: red;
+}
+
+.warning-bill-span{
+    text-transform: uppercase;
+    color: red;
+}
+
+.warning-input{
     border: 1px solid red;
 }
 
 .tip{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
+}
+
+.tip-label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-warning{
+    color: var(--Verydarkcyan);
+    background: var(--Lightcyan);
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px;
+    margin-bottom: 10px;
+    opacity: 0;
 }
 
 .tip-button{
@@ -207,7 +276,19 @@ body{
 .main-output{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
+.info-output{
+    position: absolute;
+    top: 100px;
+    font-size: 8px;
+    color: var(--Lightcyan);
+    width: 120px;
+    left: 170px;
+    opacity: 0;
+}
+
 
 .tip-amount-output{
     display: flex;
@@ -226,9 +307,12 @@ body{
     color: var(--Strong-cyan);
     font-size: 2rem;
     font-weight: 700;
+    width: 98px;
+    overflow: hidden;
 }
 
 .tip-text-sub , .total-text-sub{
     font-size: .8rem;
     color: var(--veryDarkgrayishcyan);
 }
+
